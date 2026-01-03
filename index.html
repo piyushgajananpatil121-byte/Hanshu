@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Poké Arena HD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/ui/styles.css">
+</head>
+<body>
+<div id="ui">
+  <h1>Poké Arena HD</h1>
+  <div class="health"><span>You</span><div class="bar"><div id="player-hp"></div></div></div>
+  <div class="health"><span>Enemy</span><div class="bar"><div id="enemy-hp"></div></div></div>
+  <div class="actions">
+    <button data-attack="tackle">Tackle</button>
+    <button data-attack="flame">Flame</button>
+    <button data-attack="heal">Heal</button>
+  </div>
+</div>
+<canvas id="scene"></canvas>
+
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<script src="https://unpkg.com/three@0.160.0/examples/js/loaders/GLTFLoader.js"></script>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
